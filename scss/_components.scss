@@ -1,0 +1,18 @@
+@use "base" as b;
+
+.main-btn{
+    color: b.$color-primary;
+    border: 1px solid b.$color-primary;
+    background-color: transparent;
+    width: 170px;
+    height: 45px;
+    font-family: b.$font-josefinSans;
+    font-size: 14px;
+    @include b.textStyles;
+
+    &:hover{
+     background-color: b.$color-primary;
+     color: b.$color-black;
+     transition: .4s;
+    }
+}

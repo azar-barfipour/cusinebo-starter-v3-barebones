@@ -19,3 +19,7 @@ $font-nunito: 'Nunito', sans-serif;
     letter-spacing: 2px;
     text-transform: $transform;
 }
+@mixin widthAndHeight{
+    width: 110px;
+    height: 110px;
+}
