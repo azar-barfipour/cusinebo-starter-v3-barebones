@@ -154,6 +154,11 @@ body {
   font-family: "Nunito", sans-serif;
   font-size: 50px;
 }
+@media (max-width: 40rem) {
+  .header .main-name {
+    font-size: 20px;
+  }
+}
 .header .sub-name {
   color: #bbb;
   font-weight: 300;
@@ -161,7 +166,11 @@ body {
   text-transform: uppercase;
   font-family: "Nunito", sans-serif;
   font-size: 20px;
-  text-align: center;
+}
+@media (max-width: 40rem) {
+  .header .sub-name {
+    font-size: 14px;
+  }
 }
 .header-banner {
   text-align: center;
@@ -172,11 +181,21 @@ body {
   font-size: 100px;
   font-weight: 300px;
 }
+@media (max-width: 40rem) {
+  .header .main-heading {
+    font-size: 50px;
+  }
+}
 .header .sub-heading {
   color: #bbb;
   font-family: "Josefin Sans", sans-serif;
   font-size: 40px;
   font-weight: lighter;
+}
+@media (max-width: 40rem) {
+  .header .sub-heading {
+    font-size: 20px;
+  }
 }
 
 .logo {
@@ -210,20 +229,41 @@ body {
   position: relative;
   left: -130px;
 }
+@media (max-width: 40rem) {
+  .about-us-left {
+    width: 0;
+  }
+}
 .about-us-left img {
   width: 100%;
   opacity: 0.6;
+}
+@media (max-width: 40rem) {
+  .about-us-left img {
+    display: none;
+  }
 }
 .about-us-right {
   width: 60%;
   text-align: center;
   box-sizing: border-box;
 }
+@media (max-width: 40rem) {
+  .about-us-right {
+    width: 100%;
+    text-align: center;
+  }
+}
 .about-us-right h1 {
   color: #d3ab55;
   font-family: "Dancing Script", cursive;
   font-size: 80px;
   margin: 0;
+}
+@media (max-width: 40rem) {
+  .about-us-right h1 {
+    font-size: 40px;
+  }
 }
 .about-us-right h3 {
   color: #bbb;
@@ -232,6 +272,11 @@ body {
   letter-spacing: 2px;
   text-transform: capitalize;
   font-size: 30px;
+}
+@media (max-width: 40rem) {
+  .about-us-right h3 {
+    font-size: 18px;
+  }
 }
 .about-us-right .stars {
   color: #d3ab55;
@@ -243,6 +288,11 @@ body {
   margin-bottom: 1rem;
   font-size: 18px;
   font-style: italic;
+}
+@media (max-width: 40rem) {
+  .about-us-right .description {
+    font-size: 16px;
+  }
 }
 
 .cards-wrapper {
@@ -304,6 +354,11 @@ body {
   text-transform: uppercase;
   text-align: center;
 }
+@media (max-width: 40rem) {
+  .footer .main-name {
+    font-size: 40px;
+  }
+}
 .footer .sub-name {
   color: #bbb;
   font-family: "Josefin Sans", sans-serif;
@@ -320,6 +375,11 @@ body {
 .footer .social-media-item {
   list-style: none;
   padding: 1rem;
+}
+@media (max-width: 40rem) {
+  .footer .social-media-item {
+    font-size: 18px;
+  }
 }
 .footer .social-media-link {
   color: #bbb;
@@ -346,6 +406,13 @@ body {
   font-weight: 300;
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+@media (max-width: 40rem) {
+  .main-btn {
+    font-size: 12px;
+    width: 120px;
+    height: 30px;
+  }
 }
 .main-btn:hover {
   background-color: #d3ab55;

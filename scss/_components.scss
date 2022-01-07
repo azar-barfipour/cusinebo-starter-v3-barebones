@@ -10,6 +10,12 @@
     font-size: 14px;
     @include b.textStyles;
 
+    @media (max-width: 40rem) {
+        font-size: 12px;
+        width: 120px; 
+        height: 30px;
+      }
+
     &:hover{
      background-color: b.$color-primary;
      color: b.$color-black;
