@@ -16,3 +16,13 @@
      transition: .4s;
     }
 }
+.card-overlay-btn{
+    color: b.$color-primary;
+    border: 1px solid b.$color-primary;
+    width: 170px;
+    height: 45px;
+    font-family: b.$font-josefinSans;
+    font-size: 14px;
+    @include b.textStyles;
+    border-radius: 2rem;
+}

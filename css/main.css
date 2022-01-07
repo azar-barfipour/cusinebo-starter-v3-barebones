@@ -1,3 +1,8 @@
+body {
+  background-color: #262626;
+  box-sizing: border-box;
+}
+
 .navbar {
   position: relative;
   z-index: 20;
@@ -207,10 +212,12 @@
 }
 .about-us-left img {
   width: 100%;
+  opacity: 0.6;
 }
 .about-us-right {
   width: 60%;
   text-align: center;
+  box-sizing: border-box;
 }
 .about-us-right h1 {
   color: #d3ab55;
@@ -239,6 +246,7 @@
 }
 
 .cards-wrapper {
+  height: 500px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -249,17 +257,36 @@
 }
 .cards-wrapper .card-img {
   width: 100%;
+  height: 100%;
+  transform: scale(1.2);
+  opacity: 0.6;
 }
 .cards-wrapper .card-overlay {
   display: none;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #d3ab55;
+  text-align: center;
+  opacity: 0.6;
+  transition: left 0.7s;
 }
-.cards-wrapper .card-img:hover .cards-wrapper .card-overlay {
+.cards-wrapper .card-overlay-heading {
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+}
+.cards-wrapper .card-overlay-paragraph {
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+}
+.cards-wrapper .card:hover .card-overlay {
   display: block;
 }
 
 .footer {
   background-color: #262626;
-  text-align: center;
   height: 60vh;
 }
 .footer-header {
@@ -271,9 +298,11 @@
 .footer .main-name {
   color: #bbb;
   font-family: "Josefin Sans", sans-serif;
+  font-size: 50px;
   font-weight: 300;
   letter-spacing: 2px;
   text-transform: uppercase;
+  text-align: center;
 }
 .footer .sub-name {
   color: #bbb;
@@ -281,6 +310,7 @@
   font-weight: 300;
   letter-spacing: 2px;
   text-transform: uppercase;
+  text-align: center;
 }
 .footer .social-media {
   display: flex;
@@ -296,9 +326,13 @@
   text-decoration: none;
   font-size: 50px;
 }
+.footer .social-media-link:hover {
+  color: #d3ab55;
+}
 .footer-copyright-paragraph {
   color: #bbb;
   font-family: "Josefin Sans", sans-serif;
+  text-align: center;
 }
 
 .main-btn {
@@ -317,6 +351,19 @@
   background-color: #d3ab55;
   color: #000;
   transition: 0.4s;
+}
+
+.card-overlay-btn {
+  color: #d3ab55;
+  border: 1px solid #d3ab55;
+  width: 170px;
+  height: 45px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 2rem;
 }
 
 /*# sourceMappingURL=main.css.map */
