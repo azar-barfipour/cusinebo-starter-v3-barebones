@@ -1,0 +1,48 @@
+@use "../base/base" as *;
+.footer{
+    background-color: $color-dark;
+    height: 60vh;
+    &-header{
+        @include flexLayout;
+        padding-top: 3rem;
+    }
+    .main-name{
+        color: $color-secondary;
+        font-family: $font-josefinSans;
+        font-size: 50px;
+        @include textStyles;
+        text-align: center;
+        @media (max-width: 40rem) {
+            font-size: 40px;
+           }
+    }
+    .sub-name{
+        color: $color-secondary;
+        font-family: $font-josefinSans;
+        @include textStyles;
+        text-align: center
+    }
+    .social-media{
+        @include flexLayout
+    }
+    .social-media-item{
+        list-style: none;
+        padding: 1rem;
+        @media (max-width: 40rem) {
+            font-size: 18px;
+           }
+    }
+    .social-media-link{
+        color: $color-secondary;
+        text-decoration: none;
+        font-size: 50px;
+    }
+    .social-media-link:hover{
+        color: $color-primary;
+    }
+    &-copyright-paragraph{
+        color: $color-secondary;
+        font-family: $font-josefinSans;
+        text-align: center;
+    }
+}

@@ -1,3 +1,122 @@
+.about-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #262626;
+  overflow: hidden;
+  height: 90vh;
+}
+.about-us-left {
+  width: 40%;
+  position: relative;
+  left: -130px;
+}
+@media (max-width: 40rem) {
+  .about-us-left {
+    width: 0;
+  }
+}
+.about-us-left img {
+  width: 100%;
+  opacity: 0.6;
+}
+@media (max-width: 40rem) {
+  .about-us-left img {
+    display: none;
+  }
+}
+.about-us-right {
+  width: 60%;
+  text-align: center;
+  box-sizing: border-box;
+}
+@media (max-width: 40rem) {
+  .about-us-right {
+    width: 100%;
+    text-align: center;
+  }
+}
+.about-us-right h1 {
+  color: #d3ab55;
+  font-family: "Dancing Script", cursive;
+  font-size: 80px;
+  margin: 0;
+}
+@media (max-width: 40rem) {
+  .about-us-right h1 {
+    font-size: 40px;
+  }
+}
+.about-us-right h3 {
+  color: #bbb;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  font-size: 30px;
+}
+@media (max-width: 40rem) {
+  .about-us-right h3 {
+    font-size: 18px;
+  }
+}
+.about-us-right .stars {
+  color: #d3ab55;
+  margin-bottom: 1rem;
+}
+.about-us-right .description {
+  color: #bbb;
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 1rem;
+  font-size: 18px;
+  font-style: italic;
+}
+@media (max-width: 40rem) {
+  .about-us-right .description {
+    font-size: 16px;
+  }
+}
+
+.cards-wrapper {
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cards-wrapper .card {
+  width: 33.3333%;
+  position: relative;
+  overflow: hidden;
+}
+.cards-wrapper .card-img {
+  width: 100%;
+  height: 100%;
+  transform: scale(1.2);
+  opacity: 0.6;
+}
+.cards-wrapper .card-overlay {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #d3ab55;
+  text-align: center;
+  opacity: 0.6;
+  transition: left 0.7s;
+}
+.cards-wrapper .card-overlay-heading {
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+}
+.cards-wrapper .card-overlay-paragraph {
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+}
+.cards-wrapper .card:hover .card-overlay {
+  display: block;
+}
+
 body {
   background-color: #262626;
   box-sizing: border-box;
@@ -214,125 +333,6 @@ body {
 .logo img {
   width: 110px;
   height: 110px;
-}
-
-.about-us {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #262626;
-  overflow: hidden;
-  height: 90vh;
-}
-.about-us-left {
-  width: 40%;
-  position: relative;
-  left: -130px;
-}
-@media (max-width: 40rem) {
-  .about-us-left {
-    width: 0;
-  }
-}
-.about-us-left img {
-  width: 100%;
-  opacity: 0.6;
-}
-@media (max-width: 40rem) {
-  .about-us-left img {
-    display: none;
-  }
-}
-.about-us-right {
-  width: 60%;
-  text-align: center;
-  box-sizing: border-box;
-}
-@media (max-width: 40rem) {
-  .about-us-right {
-    width: 100%;
-    text-align: center;
-  }
-}
-.about-us-right h1 {
-  color: #d3ab55;
-  font-family: "Dancing Script", cursive;
-  font-size: 80px;
-  margin: 0;
-}
-@media (max-width: 40rem) {
-  .about-us-right h1 {
-    font-size: 40px;
-  }
-}
-.about-us-right h3 {
-  color: #bbb;
-  font-family: "Nunito", sans-serif;
-  font-weight: 300;
-  letter-spacing: 2px;
-  text-transform: capitalize;
-  font-size: 30px;
-}
-@media (max-width: 40rem) {
-  .about-us-right h3 {
-    font-size: 18px;
-  }
-}
-.about-us-right .stars {
-  color: #d3ab55;
-  margin-bottom: 1rem;
-}
-.about-us-right .description {
-  color: #bbb;
-  font-family: "Nunito", sans-serif;
-  margin-bottom: 1rem;
-  font-size: 18px;
-  font-style: italic;
-}
-@media (max-width: 40rem) {
-  .about-us-right .description {
-    font-size: 16px;
-  }
-}
-
-.cards-wrapper {
-  height: 500px;
-  display: flex;
-  flex-wrap: wrap;
-}
-.cards-wrapper .card {
-  width: 33.3333%;
-  position: relative;
-  overflow: hidden;
-}
-.cards-wrapper .card-img {
-  width: 100%;
-  height: 100%;
-  transform: scale(1.2);
-  opacity: 0.6;
-}
-.cards-wrapper .card-overlay {
-  display: none;
-  position: absolute;
-  z-index: 10;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #d3ab55;
-  text-align: center;
-  opacity: 0.6;
-  transition: left 0.7s;
-}
-.cards-wrapper .card-overlay-heading {
-  color: #fff;
-  font-family: "Nunito", sans-serif;
-}
-.cards-wrapper .card-overlay-paragraph {
-  color: #fff;
-  font-family: "Nunito", sans-serif;
-}
-.cards-wrapper .card:hover .card-overlay {
-  display: block;
 }
 
 .footer {
